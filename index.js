@@ -20,20 +20,20 @@ function backgroundGen(k, sk) {
         sk = "000000";
     //Check key got passed
     if (typeof (k) == undefined) {
-        throw ('No key');
         console.log("No key provided");
+        throw ('No key');
     }
     //Check key is a valid key
     else if (k.length != 6 || sk.length != 6){
-        throw ('Invalid key');
         console.log('Key is invalid');
+        throw ('Invalid key');
     }
     //If static key is passed and is valid then set private key
     var privateKey = (typeof (privateKey) == 'undefined') ? sk : privateKey;
     //Check keys match
     if (k != privateKey) {
-        throw ('Key mismatch');
         console.log("Keys do not match");
+        throw ('Key mismatch');
     }
     //If everything works out change color
     var color = "#";
