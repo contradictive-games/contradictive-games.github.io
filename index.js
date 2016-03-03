@@ -1,0 +1,2 @@
+var d;setInterval(function(){var a=Math.floor(999999*Math.random()),b=Math.log(a)*Math.LOG10E+1|0;d=6>b?"0".repeat(6-b)+a.toString():a.toString()},1E3);
+document.addEventListener("DOMContentLoaded",function(){var a=d,b=d;"undefined"==typeof b&&(b="000000");if(6!=a.length||6!=b.length)throw console.log("Key is invalid"),"Invalid key";var c;if(a!=("undefined"==typeof c?b:c))throw console.log("Keys do not match"),"Key mismatch";a="#";b="0123456789ABCDEF".split("");for(c=0;6>c;c++)a+=b[Math.floor(16*Math.random())];document.body.bgColor=a});
