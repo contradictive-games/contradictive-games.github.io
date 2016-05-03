@@ -1,8 +1,8 @@
 //On page load event listener
 document.addEventListener("DOMContentLoaded", function () {
-    backgroundGen(key); /*Calls background function*/ 
+    backgroundGen(); /*Calls background function*/ 
 })
-function backgroundGen(k) {
+function backgroundGen() {
     //If everything works out change color
     var key;
     var tempInt = Math.floor(Math.random() * 16777215).toString(16).toUpperCase();
