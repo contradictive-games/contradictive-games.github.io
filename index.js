@@ -1,7 +1,5 @@
 //On page load event listener
-document.addEventListener("DOMContentLoaded", function () {
-    backgroundGen(); /*Calls background function*/ 
-})
+document.addEventListener("DOMContentLoaded", backgroundGen)
 function backgroundGen() {
     //If everything works out change color
     var tempInt = Math.floor(Math.random() * 16777215).toString(16);
